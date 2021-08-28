@@ -11,7 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 	jose "gopkg.in/square/go-jose.v2"
 
-	"github.com/Pungyeon/golang-auth0-example/handlers"
+	"github.com/HermanDeadpool98/golang-auth0-herman/handlers"
 )
 
 var (
@@ -48,7 +48,7 @@ func main() {
 }
 
 func setAuth0Variables() {
-	audience = os.Getenv("AUTH0_API_IDENTIFIER")
+	audience = os.Getenv("https://example.com/todobackend")
 	domain = os.Getenv("AUTH0_DOMAIN")
 }
 
